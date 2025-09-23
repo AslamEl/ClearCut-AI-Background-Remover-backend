@@ -31,7 +31,7 @@ public class UserEntity {
     public void prePersist()
     {
         if (credits==null){
-            credits=5;
+            credits=1;
         }
     }
 
