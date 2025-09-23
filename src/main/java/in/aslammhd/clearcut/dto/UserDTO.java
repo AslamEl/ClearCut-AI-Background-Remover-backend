@@ -18,4 +18,5 @@ public class UserDTO {
     private String lastName;
     private String photoUrl;
     private Integer credits;
+    private String userName;
 }

@@ -28,6 +28,7 @@ public class UserServiceImpl implements UserService {
             existingUser.setFirstName(userDTO.getFirstName());
             existingUser.setLastName(userDTO.getLastName());
             existingUser.setPhotoUrl(userDTO.getPhotoUrl());
+            existingUser.setUserName(userDTO.getUserName());
 
             if(userDTO.getCredits()!=null){
                 existingUser.setCredits(userDTO.getCredits());
@@ -64,6 +65,7 @@ public class UserServiceImpl implements UserService {
                 .email(newUser.getEmail())
                 .firstName(newUser.getFirstName())
                 .lastName(newUser.getLastName())
+                .userName(newUser.getUserName())
                 .build();
     }
 
@@ -75,6 +77,7 @@ public class UserServiceImpl implements UserService {
                 .firstName(userDTO.getFirstName())
                 .lastName(userDTO.getLastName())
                 .photoUrl(userDTO.getPhotoUrl())
+                .userName(userDTO.getUserName())
                 .build();
     }
 }

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Builder;
 
 @Entity
-@Table(name="tbl_users")
+@Table(name="users_info")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -24,6 +24,8 @@ public class UserEntity {
     private String lastName;
     private Integer credits;
     private String photoUrl;
+    private String userName;
+
 
     @PrePersist
     public void prePersist()
